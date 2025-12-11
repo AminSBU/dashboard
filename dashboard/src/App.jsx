@@ -3,13 +3,14 @@ import './App.css'
 import Home from './Home.jsx'
 import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
 import { Link } from 'react-router-dom';
+import NewPost from './NewPost.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Sidebar>
+      <Sidebar className='sidebar'>
         <Menu
           menuItemStyles={{
             button: {
@@ -22,9 +23,9 @@ function App() {
             },
           }}
         >
-          <MenuItem component={<Link to="/documentation" />}> Documentation</MenuItem>
-          <MenuItem component={<Link to="/calendar" />}> Calendar</MenuItem>
-          <MenuItem component={<Link to="/e-commerce" />}> E-commerce</MenuItem>
+          <MenuItem component={<Link to="/dashboard" />}> Dashboard</MenuItem>
+          <MenuItem component={<Link to="/posts" />}> Posts</MenuItem>
+          <MenuItem component={<Link to="/NewPost" />}> New Post</MenuItem>
         </Menu>
       </Sidebar>;
     </>
