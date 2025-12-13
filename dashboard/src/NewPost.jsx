@@ -13,6 +13,10 @@ function NewPost() {
                 <label htmlFor="content">Content:</label>
                 <textarea id="content" name="content" required></textarea>
             </div>
+            <div>
+                <label htmlFor="file">image:</label>
+                <input type="file" id="file" name="file" accept="image/png, image/jpeg" required />
+            </div>
             <button type="submit">Submit</button>
         </form>
     </div>
