@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/Navbar.tsx";
 import Footer from "./components/footer/Footer.tsx";
 import Menu from "./components/menu/Menu.tsx";
 import { createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
+import "./styles/global.scss"
 
 function App() {
   const Layout = () =>{
