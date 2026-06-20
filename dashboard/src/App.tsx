@@ -4,7 +4,7 @@ import Products from "./pages/products/Products.tsx";
 import Navbar from "./components/navbar/Navbar.tsx";
 import Footer from "./components/footer/Footer.tsx";
 import Menu from "./components/menu/Menu.tsx";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 
 function App() {
   const Layout = () =>{
@@ -15,21 +15,35 @@ function App() {
           <div className="menuContainer">
             <Menu />
           </div>
-          <div className="contentContainer"></div>
+          <div className="contentContainer">
+            <Outlet />
+          </div>
         </div>
         <Footer />
       </div>
     )
   }
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/users" element={<Users />} />
-        <Route path="/products" element={<Products />} />
-      </Routes>
-    </BrowserRouter>
-  );
+  const router = createBrowserRouter([
+    {
+      path:"/",
+      element:<Layout />,
+      children:[
+        {
+          path:"/",
+          element:<Home />
+        },
+        {
+          path:"/users",
+          element:<Users />
+        },
+        {
+          path:"/products",
+          element:<Products />
+        },
+      ]
+    }
+  ])
+  return <RouterProvider router={router} />
 }
 
 export default App;

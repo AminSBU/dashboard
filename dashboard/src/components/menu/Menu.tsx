@@ -1,5 +1,3 @@
-import "/Menu.scss";
-
 const Menu = () => {
     return(
         <div className="Menu">
@@ -7,3 +5,5 @@ const Menu = () => {
         </div>
     )
 }
+
+export default Menu;
