@@ -1,7 +1,13 @@
 const Navbar = () => {
     return(
         <div className="navbar">
-            Navbar
+            <div className="logo">
+                <img src="logo.svg" alt="" />
+                <span>website</span>
+            </div>
+            <div className="icons">
+
+            </div>
         </div>
     )
 }
