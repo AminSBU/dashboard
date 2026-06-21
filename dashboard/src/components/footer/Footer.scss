@@ -12,5 +12,9 @@
         &:last-child{
             font-size: 14px;
         }
+
+        &:hover{
+            background-color: red;
+        }
     }
 }
