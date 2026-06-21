@@ -2,13 +2,27 @@
     width: 100%;
     padding: 20px;
     display: flex;
-}
+    align-items: center;
+    justify-content: space-between;
 
-.user{
-    img{
-        width: 26px;
-        height: 26px;
-        border-radius: 50px;
-        object-fit: cover;
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+
+    .icons
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    .user{
+        img{
+            width: 26px;
+            height: 26px;
+            border-radius: 50px;
+            object-fit: cover;
+        }
     }
 }
+

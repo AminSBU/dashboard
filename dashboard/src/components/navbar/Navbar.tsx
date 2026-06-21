@@ -8,9 +8,9 @@ const Navbar = () => {
                 <span>website</span>
             </div>
             <div className="icons">
-                <img src="/search.svg" alt="" className="icon" />
-                <img src="/app.svg" alt="" className="icon" />
-                <img src="./expand.svg" alt="" className="icon" />
+                <img src="/search.svg" alt="" className="icons" />
+                <img src="/app.svg" alt="" className="icons" />
+                <img src="./expand.svg" alt="" className="icons" />
                 <div className="notification">
                     <img src="./notification.svg" alt="" />
                     <span>1</span>
@@ -19,7 +19,7 @@ const Navbar = () => {
                     <img src="./user.svg" alt="" />
                     <span>Amin</span>
                 </div>
-                <img src="./settings.svg" alt="" className="icon" />
+                <img src="./settings.svg" alt="" className="icons" />
             </div>
         </div>
     )
