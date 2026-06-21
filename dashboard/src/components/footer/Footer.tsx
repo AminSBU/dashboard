@@ -1,7 +1,10 @@
+import "./Footer.scss"
+
 const Footer = () => {
     return(
         <div className="Footer">
-            Footer
+            <span>website</span>
+            <span>Copyright reserved</span>
         </div>
     )
 }
