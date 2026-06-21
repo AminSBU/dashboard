@@ -38,6 +38,9 @@
     }
 
     .user{
+        display: flex;
+        align-items: center;
+        gap: 10px;
         img{
             width: 26px;
             height: 26px;
