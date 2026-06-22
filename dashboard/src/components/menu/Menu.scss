@@ -1,0 +1,16 @@
+@import "../../styles/variables.scss";
+
+.Menu{
+    .item{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        .item{
+            font-size: 12px;
+            font-weight: 200px;
+            color: $soft-color;
+        }
+    }
+}
