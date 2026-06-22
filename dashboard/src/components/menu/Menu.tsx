@@ -1,21 +1,23 @@
 import { Link } from "react-router-dom";
 import "./Menu.scss"
+import {menu} from "./../../../src/data"
 
 const Menu = () => {
     return(
         <div className="Menu">
-            <div className="item">
-                <span className="title">MAIN</span>
-                <Link to="/" className="listItem">
-                    <img src="./home.svg" alt="" />
-                    <span className="listItemTiltle">HomePage</span>
-                </Link>
-                <Link to="/" className="listItem">
-                    <img src="./profile.svg" alt="" />
-                    <span className="listItemTiltle">Profile</span>
-                </Link>
-
-                <span className="title">LISTS</span>
+            {menu.map((item) => (
+                <div className="item" key={item.id}>
+                    <span className="title">{item.title}</span>
+                    {item.listItems.map(listItem =>(
+                        <Link to="/" className="listItem" key={listItem.id}>
+                            <img src={listItem.icon} alt="" />
+                            <span className="listItemTiltle">HomePage</span>
+                        </Link>
+                    ))}
+                </div>
+            ))}
+            
+                {/* <span className="title">LISTS</span>
                 <Link to="/" className="listItem">
                     <img src="./user.svg" alt="" />
                     <span className="listItemTiltle">Users</span>
@@ -31,8 +33,8 @@ const Menu = () => {
                 <Link to="/" className="listItem">
                     <img src="./post.svg" alt="" />
                     <span className="listItemTiltle">post</span>
-                </Link>
-            </div>
+                </Link> */}
+            {/* </div> */}
         </div>
     )
 }
