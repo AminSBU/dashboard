@@ -3,9 +3,11 @@
 .home{
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 3fr 1fr;
+    grid-auto-rows: minmax(auto, auto); 
+    box-sizing: border-box;
     padding: 30px;
-    
+
     .box{
         padding: 20px;
         border-radius: 10px;
