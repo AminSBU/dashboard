@@ -1,4 +1,12 @@
+@import "../../styles/variables.scss";
+
 .home{
-    background: #e65e5e;
-    height: 100%;
+    display: grid;
+    gap: 20px;
+    
+    .box{
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid $soft-bg;
+    }
 }
